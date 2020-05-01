@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://xwz527.github.io</id>
     <title>wenzhengBlog</title>
-    <updated>2020-05-01T08:34:43.419Z</updated>
+    <updated>2020-05-01T08:45:13.647Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://xwz527.github.io"/>
     <link rel="self" href="https://xwz527.github.io/atom.xml"/>
@@ -10,4 +10,23 @@
     <logo>https://xwz527.github.io/images/avatar.png</logo>
     <icon>https://xwz527.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, wenzhengBlog</rights>
+    <entry>
+        <title type="html"><![CDATA[Github绑定域名]]></title>
+        <id>https://xwz527.github.io/post/github-bang-ding-yu-ming/</id>
+        <link href="https://xwz527.github.io/post/github-bang-ding-yu-ming/">
+        </link>
+        <updated>2020-05-01T08:35:44.000Z</updated>
+        <content type="html"><![CDATA[<p>#1.在仓库里添加CNAME文件并在文件中填写绑定的域名<br>
+<img src="https://xwz527.github.io/post-images/1588322642354.jpg" alt="" loading="lazy"><br>
+文件内容为自己的域名（格式如：masamoto.top）<br>
+#2.添加域名解析<br>
+ping 自己可访问的http://github.io域名，得到一个IP<br>
+<img src="https://xwz527.github.io/post-images/1588322661008.jpg" alt="" loading="lazy"><br>
+修改域名解析记录<br>
+<img src="https://xwz527.github.io/post-images/1588322682934.jpg" alt="" loading="lazy"><br>
+添加两个A记录，用上面得到的IP，一个主机记录为：“www”，一个为“@”<br>
+这样通过 <strong>http://masamoto.top/</strong>  就能访问自己的博客了。<br>
+😘 Enjoy~</p>
+]]></content>
+    </entry>
 </feed>
