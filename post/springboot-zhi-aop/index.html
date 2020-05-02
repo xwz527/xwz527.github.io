@@ -1,22 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://xwz527.github.io</id>
-    <title>wenzhengBlog</title>
-    <updated>2020-05-02T02:23:55.918Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://xwz527.github.io"/>
-    <link rel="self" href="https://xwz527.github.io/atom.xml"/>
-    <subtitle>Well begun is half done!</subtitle>
-    <logo>https://xwz527.github.io/images/avatar.png</logo>
-    <icon>https://xwz527.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, wenzhengBlog</rights>
-    <entry>
-        <title type="html"><![CDATA[springboot之AOP]]></title>
-        <id>https://xwz527.github.io/post/springboot-zhi-aop/</id>
-        <link href="https://xwz527.github.io/post/springboot-zhi-aop/">
-        </link>
-        <updated>2020-05-02T02:11:36.000Z</updated>
-        <content type="html"><![CDATA[<p>​       面向切面编程（aspect-oriented programming），是一种将横切关注点与业务逻辑分离的编程方式。每个横切关注点都集中在一个地方，而不是分散在多处代码中。这样使我们的服务模块更加简洁，因为它们只包含了主要关注点的代码，而次要的功能或者说辅助的功能被转移到切面中了。比如权限校验、日志记录等可以放在切面处而不是在每个代码块中都重复去写这部分。</p>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>springboot之AOP | wenzhengBlog</title>
+<link rel="shortcut icon" href="https://xwz527.github.io/favicon.ico?v=1588386230437">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://xwz527.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="springboot之AOP | wenzhengBlog - Atom Feed" href="https://xwz527.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="​       面向切面编程（aspect-oriented programming），是一种将横切关注点与业务逻辑分离的编程方式。每个横切关注点都集中在一个地方，而不是分散在多处代码中。这样使我们的服务模块更加简洁，因为它们只包含了主要关..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://xwz527.github.io">
+  <img class="avatar" src="https://xwz527.github.io/images/avatar.png?v=1588386230437" alt="">
+  </a>
+  <h1 class="site-title">
+    wenzhengBlog
+  </h1>
+  <p class="site-description">
+    Well begun is half done!
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              springboot之AOP
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-05-02
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>​       面向切面编程（aspect-oriented programming），是一种将横切关注点与业务逻辑分离的编程方式。每个横切关注点都集中在一个地方，而不是分散在多处代码中。这样使我们的服务模块更加简洁，因为它们只包含了主要关注点的代码，而次要的功能或者说辅助的功能被转移到切面中了。比如权限校验、日志记录等可以放在切面处而不是在每个代码块中都重复去写这部分。</p>
 <h1 id="术语解释"><strong>术语解释：</strong></h1>
 <h2 id="通知advice">通知（Advice）</h2>
 <p>Advice 定义了在 pointcut 里面定义的程序点具体要做的操作，比如上面所说的权限校验、日志记录等频繁使用的功能它通过 before、after 和 around 来区别是在每个 joint point 之前、之后还是代替执行的代码。</p>
@@ -148,25 +220,100 @@ public void afterThrowing(JoinPoint joinPoint, Exception ex) {
 <li>有效减少冗余代码，让我们的类关注自身的主要功能</li>
 <li>通过使用@Aspect注解和简单的配置，可以很简单的在Spring中装配advice和pointcut</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Github绑定域名]]></title>
-        <id>https://xwz527.github.io/post/github-bang-ding-yu-ming/</id>
-        <link href="https://xwz527.github.io/post/github-bang-ding-yu-ming/">
-        </link>
-        <updated>2020-05-01T08:35:44.000Z</updated>
-        <content type="html"><![CDATA[<p>#<em>1.在仓库里添加CNAME文件并在文件中填写绑定的域名</em><br>
-<img src="https://xwz527.github.io/post-images/1588322642354.jpg" alt="" loading="lazy"><br>
-文件内容为自己的域名（格式如：masamoto.top）<br>
-#<em>2.添加域名解析</em><br>
-ping 自己可访问的http://github.io域名，得到一个IP<br>
-<img src="https://xwz527.github.io/post-images/1588322661008.jpg" alt="" loading="lazy"><br>
-修改域名解析记录<br>
-<img src="https://xwz527.github.io/post-images/1588322682934.jpg" alt="" loading="lazy"><br>
-添加两个A记录，用上面得到的IP，一个主机记录为：“www”，一个为“@”<br>
-这样通过 <strong>http://masamoto.top/</strong>  就能访问自己的博客了。<br>
-😘 Enjoy~</p>
-]]></content>
-    </entry>
-</feed>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%9C%AF%E8%AF%AD%E8%A7%A3%E9%87%8A"><strong>术语解释：</strong></a>
+<ul>
+<li><a href="#%E9%80%9A%E7%9F%A5advice">通知（Advice）</a></li>
+<li><a href="#%E8%BF%9E%E6%8E%A5%E7%82%B9joinpoint">连接点（JoinPoint）</a></li>
+<li><a href="#%E5%88%87%E5%85%A5%E7%82%B9pointcut">切入点（Pointcut）</a></li>
+<li><a href="#%E5%88%87%E9%9D%A2aspect">切面（Aspect）</a></li>
+</ul>
+</li>
+<li><a href="#springboot%E4%B9%8Baop">SpringBoot之AOP：</a>
+<ul>
+<li><a href="#1%E5%BC%95%E5%85%A5%E4%BE%9D%E8%B5%96"><strong>1.引入依赖</strong></a></li>
+<li><a href="#2%E6%99%AE%E9%80%9A%E7%B1%BB%E6%96%B9%E6%B3%95%E5%88%87%E9%9D%A2%E7%B1%BB"><strong>2.普通类方法切面类</strong></a></li>
+<li><a href="#3%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3%E6%96%B9%E6%B3%95%E5%88%87%E9%9D%A2%E7%B1%BB">3.<strong>自定义注解方法切面类</strong></a>
+<ul>
+<li><a href="#1%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3">1.自定义注解</a></li>
+<li><a href="#2%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%87%E9%9D%A2%E7%B1%BB">2.自定义切面类</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://xwz527.github.io/post/github-bang-ding-yu-ming/">
+              <h3 class="post-title">
+                Github绑定域名
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  
+  <a class="rss" href="https://xwz527.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
